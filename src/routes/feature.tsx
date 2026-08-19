@@ -26,7 +26,15 @@ export const Route = createFileRoute("/feature")({
   component: Feature,
 });
 
-function Counter({ to, suffix = "", prefix = "" }: { to: number; suffix?: string; prefix?: string }) {
+function Counter({
+  to,
+  suffix = "",
+  prefix = "",
+}: {
+  to: number;
+  suffix?: string | undefined;
+  prefix?: string | undefined;
+}) {
   const ref = useRef<HTMLSpanElement>(null);
   const [val, setVal] = useState(0);
 
