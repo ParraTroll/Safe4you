@@ -10,33 +10,91 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdviceRouteImport } from './routes/advice'
+import { Route as CreativeRouteImport } from './routes/creative'
+import { Route as FeatureRouteImport } from './routes/feature'
+import { Route as QuizRouteImport } from './routes/quiz'
+import { Route as ReflectionRouteImport } from './routes/reflection'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdviceRoute = AdviceRouteImport.update({
+  id: '/advice',
+  path: '/advice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CreativeRoute = CreativeRouteImport.update({
+  id: '/creative',
+  path: '/creative',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeatureRoute = FeatureRouteImport.update({
+  id: '/feature',
+  path: '/feature',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuizRoute = QuizRouteImport.update({
+  id: '/quiz',
+  path: '/quiz',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReflectionRoute = ReflectionRouteImport.update({
+  id: '/reflection',
+  path: '/reflection',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/advice': typeof AdviceRoute
+  '/creative': typeof CreativeRoute
+  '/feature': typeof FeatureRoute
+  '/quiz': typeof QuizRoute
+  '/reflection': typeof ReflectionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/advice': typeof AdviceRoute
+  '/creative': typeof CreativeRoute
+  '/feature': typeof FeatureRoute
+  '/quiz': typeof QuizRoute
+  '/reflection': typeof ReflectionRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/advice': typeof AdviceRoute
+  '/creative': typeof CreativeRoute
+  '/feature': typeof FeatureRoute
+  '/quiz': typeof QuizRoute
+  '/reflection': typeof ReflectionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/advice' | '/creative' | '/feature' | '/quiz' | '/reflection'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/advice' | '/creative' | '/feature' | '/quiz' | '/reflection'
+  id:
+    | '__root__'
+    | '/'
+    | '/advice'
+    | '/creative'
+    | '/feature'
+    | '/quiz'
+    | '/reflection'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdviceRoute: typeof AdviceRoute
+  CreativeRoute: typeof CreativeRoute
+  FeatureRoute: typeof FeatureRoute
+  QuizRoute: typeof QuizRoute
+  ReflectionRoute: typeof ReflectionRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +106,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/advice': {
+      id: '/advice'
+      path: '/advice'
+      fullPath: '/advice'
+      preLoaderRoute: typeof AdviceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/creative': {
+      id: '/creative'
+      path: '/creative'
+      fullPath: '/creative'
+      preLoaderRoute: typeof CreativeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/feature': {
+      id: '/feature'
+      path: '/feature'
+      fullPath: '/feature'
+      preLoaderRoute: typeof FeatureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quiz': {
+      id: '/quiz'
+      path: '/quiz'
+      fullPath: '/quiz'
+      preLoaderRoute: typeof QuizRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reflection': {
+      id: '/reflection'
+      path: '/reflection'
+      fullPath: '/reflection'
+      preLoaderRoute: typeof ReflectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdviceRoute: AdviceRoute,
+  CreativeRoute: CreativeRoute,
+  FeatureRoute: FeatureRoute,
+  QuizRoute: QuizRoute,
+  ReflectionRoute: ReflectionRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
