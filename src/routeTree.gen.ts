@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdviceRouteImport } from './routes/advice'
+import { Route as FeatureRouteImport } from './routes/feature'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdviceRoute = AdviceRouteImport.update({
+  id: '/advice',
+  path: '/advice',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeatureRoute = FeatureRouteImport.update({
+  id: '/feature',
+  path: '/feature',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/advice': typeof AdviceRoute
+  '/feature': typeof FeatureRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/advice': typeof AdviceRoute
+  '/feature': typeof FeatureRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/advice': typeof AdviceRoute
+  '/feature': typeof FeatureRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/advice' | '/feature'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/advice' | '/feature'
+  id: '__root__' | '/' | '/advice' | '/feature'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdviceRoute: typeof AdviceRoute
+  FeatureRoute: typeof FeatureRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/advice': {
+      id: '/advice'
+      path: '/advice'
+      fullPath: '/advice'
+      preLoaderRoute: typeof AdviceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/feature': {
+      id: '/feature'
+      path: '/feature'
+      fullPath: '/feature'
+      preLoaderRoute: typeof FeatureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdviceRoute: AdviceRoute,
+  FeatureRoute: FeatureRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
