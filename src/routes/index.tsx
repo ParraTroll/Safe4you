@@ -53,7 +53,7 @@ const PILLARS = [
   },
 ];
 
-const TEAM = ["Ibrahim Mollah", "Group Member 2", "Group Member 3"];
+const TEAM = ["Ibrahim Mollah", "Abdullah Ibn Usman", "Zaid Munir"];
 
 function Home() {
   return (
