@@ -9,13 +9,13 @@ import scenario from "@/assets/scenario.jpg";
 export const Route = createFileRoute("/creative")({
   head: () => ({
     meta: [
-      { title: "Creative Corner: Cyber Safety Posts & Story | GuardUp" },
+      { title: "Creative Corner: Cyber Safety Posts & Story | Safe4you" },
       {
         name: "description",
         content:
           "A creative take on online safety — an illustrated scam scenario and a set of social posts showing how one suspicious message plays out.",
       },
-      { property: "og:title", content: "Creative Corner | GuardUp" },
+      { property: "og:title", content: "Creative Corner | Safe4you" },
       {
         property: "og:description",
         content: "An illustrated scenario and social posts about spotting an online scam.",
