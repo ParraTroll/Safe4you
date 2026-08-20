@@ -9,13 +9,13 @@ import scenario from "@/assets/scenario.jpg";
 export const Route = createFileRoute("/creative")({
   head: () => ({
     meta: [
-      { title: "Creative Corner: Cyber Safety Posts & Story | GuardUp" },
+      { title: "Creative Corner: Cyber Safety Posts & Story | Safe4you" },
       {
         name: "description",
         content:
           "A creative take on online safety — an illustrated scam scenario and a set of social posts showing how one suspicious message plays out.",
       },
-      { property: "og:title", content: "Creative Corner | GuardUp" },
+      { property: "og:title", content: "Creative Corner | Safe4you" },
       {
         property: "og:description",
         content: "An illustrated scenario and social posts about spotting an online scam.",
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/creative")({
 
 const POSTS = [
   {
-    handle: "@guardup.official",
+    handle: "@safe4you.official",
     caption:
       "That 'free V-Bucks' link your mate sent? Their account is hacked, not generous. Never log in through a link someone DMs you. 🎣",
     tag: "#PhishingIsNotFishing",
@@ -38,7 +38,7 @@ const POSTS = [
     emoji: "🎣",
   },
   {
-    handle: "@guardup.official",
+    handle: "@safe4you.official",
     caption:
       "Your password should be a passphrase: 4 random words beats P@ssw0rd1 every single time. Then switch on 2FA and go live your life. 🔐",
     tag: "#PassphraseNotPassword",
@@ -47,7 +47,7 @@ const POSTS = [
     emoji: "🔐",
   },
   {
-    handle: "@guardup.official",
+    handle: "@safe4you.official",
     caption:
       "Uniform + suburb + daily routine = a map to you. Post the memory, not the location. 📍",
     tag: "#ThinkBeforeYouTag",
@@ -161,7 +161,7 @@ function Creative() {
       </section>
 
       <section className="mx-auto max-w-5xl px-5 pt-16">
-        <h2 className="text-center text-3xl font-bold">The GuardUp campaign feed</h2>
+        <h2 className="text-center text-3xl font-bold">The Safe4you campaign feed</h2>
         <p className="mt-3 text-center text-muted-foreground">
           Three posts we designed to make cyber safety actually shareable. Tap the hearts.
         </p>
