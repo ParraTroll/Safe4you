@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Fingerprint, KeyRound, Lock, ShieldAlert, Wifi } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
-import heroShield from "@/assets/hero-shield.jpg";
+import staySafeKeyboard from "@/assets/stay-safe-keyboard.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
