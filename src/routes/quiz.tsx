@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/quiz")({
   head: () => ({
     meta: [
-      { title: "Interactive Cyber Safety Quiz & Password Checker | GuardUp" },
+      { title: "Interactive Cyber Safety Quiz & Password Checker | Safe4you" },
       {
         name: "description",
         content:
