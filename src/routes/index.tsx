@@ -68,7 +68,7 @@ function Home() {
               className="animate-rise mt-6 text-5xl font-extrabold text-balance sm:text-6xl"
               style={{ animationDelay: "80ms" }}
             >
-              Guard<span className="text-gradient">Up</span>: Your Shield for a Safer Online Life
+              Safe<span className="text-gradient">4you</span>: Your Shield for a Safer Online Life
             </h1>
             <p
               className="animate-rise mt-5 max-w-xl text-lg text-pretty text-muted-foreground"
