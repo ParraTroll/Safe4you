@@ -71,7 +71,7 @@ export function Layout({ children }: { children: ReactNode }) {
               <ShieldCheck className="size-5" />
             </span>
             <span className="font-display text-lg font-bold tracking-tight">
-              Guard<span className="text-gradient">Up</span>
+              Safe<span className="text-gradient">4you</span>
             </span>
           </Link>
 
