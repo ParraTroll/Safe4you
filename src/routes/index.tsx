@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Fingerprint, KeyRound, Lock, ShieldAlert, Wifi } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
-import heroShield from "@/assets/hero-shield.jpg";
+import staySafeKeyboard from "@/assets/stay-safe-keyboard.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -106,10 +106,10 @@ function Home() {
           <Reveal className="relative">
             <div className="animate-float overflow-hidden rounded-3xl glass">
               <img
-                src={heroShield}
-                alt="Neon green and blue digital shield protecting personal data"
-                width={1600}
-                height={1008}
+                src={staySafeKeyboard.url}
+                alt="Brass key resting on a laptop keyboard above a green STAY SAFE key"
+                width={1920}
+                height={1280}
                 className="h-full w-full object-cover"
               />
             </div>
