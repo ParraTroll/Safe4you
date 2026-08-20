@@ -14,7 +14,7 @@ export const Route = createFileRoute("/quiz")({
         content:
           "Test your online safety knowledge with an interactive scam-spotting quiz and check how strong your password habits really are.",
       },
-      { property: "og:title", content: "Cyber Safety Quiz | GuardUp" },
+      { property: "og:title", content: "Cyber Safety Quiz | Safe4you" },
       {
         property: "og:description",
         content: "Spot the scam and test your password strength in this interactive quiz.",
