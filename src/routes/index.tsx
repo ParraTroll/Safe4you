@@ -7,13 +7,13 @@ import staySafeKeyboard from "@/assets/stay-safe-keyboard.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "GuardUp | Online Safety & Security for Young People" },
+      { title: "Safe4you | Online Safety & Security for Young People" },
       {
         name: "description",
         content:
-          "GuardUp is a Year 9 digital wellbeing site helping teens stay safe online with strong passwords, scam spotting, privacy tips and interactive tools.",
+          "Safe4you is a Year 9 digital wellbeing site helping teens stay safe online with strong passwords, scam spotting, privacy tips and interactive tools.",
       },
-      { property: "og:title", content: "GuardUp | Online Safety & Security" },
+      { property: "og:title", content: "Safe4you | Online Safety & Security" },
       {
         property: "og:description",
         content: "Interactive guide to staying safe and secure online, made for young people.",
