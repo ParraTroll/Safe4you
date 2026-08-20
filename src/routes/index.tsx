@@ -104,7 +104,7 @@ function Home() {
           </div>
 
           <Reveal className="relative">
-            <div className="animate-float overflow-hidden rounded-3xl glass">
+            <div className="overflow-hidden rounded-3xl glass transition-transform duration-500 hover:animate-float hover:scale-[1.02]">
               <img
                 src={staySafeKeyboard.url}
                 alt="Brass key resting on a laptop keyboard above a green STAY SAFE key"
