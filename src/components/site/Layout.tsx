@@ -62,7 +62,7 @@ export function Layout({ children }: { children: ReactNode }) {
     <div className="relative min-h-screen">
       <ScrollBar />
       <Cursor />
-      <div aria-hidden className="pointer-events-none fixed inset-0 z-0 grid-lines opacity-40" />
+      <div aria-hidden className="pointer-events-none fixed inset-0 z-0 dot-pattern opacity-40" />
 
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/40 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
