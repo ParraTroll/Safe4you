@@ -121,13 +121,12 @@
   color: transparent;
 }
 
-@utility grid-lines {
-  background-image: linear-gradient(
-      color-mix(in oklab, var(--cyan) 9%, transparent) 1px,
-      transparent 1px
-    ),
-    linear-gradient(90deg, color-mix(in oklab, var(--cyan) 9%, transparent) 1px, transparent 1px);
-  background-size: 56px 56px;
+@utility dot-pattern {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--cyan) 22%, transparent) 1.2px,
+    transparent 1.2px
+  );
+  background-size: 28px 28px;
 }
 
 @keyframes float-slow {
