@@ -127,7 +127,7 @@ export function Layout({ children }: { children: ReactNode }) {
 
       <footer className="relative z-10 mt-24 border-t border-border/60 bg-background/30 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-10 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>GuardUp — Year 9 Digital Wellbeing Project, 2026.</p>
+          <p>Safe4you — Year 9 Digital Wellbeing Project, 2026.</p>
           <p>
             Need help now? <span className="text-primary">eSafety.gov.au</span> ·{" "}
             <span className="text-primary">Kids Helpline 1800 55 1800</span>
