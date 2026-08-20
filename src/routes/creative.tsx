@@ -29,7 +29,7 @@ export const Route = createFileRoute("/creative")({
 
 const POSTS = [
   {
-    handle: "@guardup.official",
+    handle: "@safe4you.official",
     caption:
       "That 'free V-Bucks' link your mate sent? Their account is hacked, not generous. Never log in through a link someone DMs you. 🎣",
     tag: "#PhishingIsNotFishing",
@@ -38,7 +38,7 @@ const POSTS = [
     emoji: "🎣",
   },
   {
-    handle: "@guardup.official",
+    handle: "@safe4you.official",
     caption:
       "Your password should be a passphrase: 4 random words beats P@ssw0rd1 every single time. Then switch on 2FA and go live your life. 🔐",
     tag: "#PassphraseNotPassword",
@@ -47,7 +47,7 @@ const POSTS = [
     emoji: "🔐",
   },
   {
-    handle: "@guardup.official",
+    handle: "@safe4you.official",
     caption:
       "Uniform + suburb + daily routine = a map to you. Post the memory, not the location. 📍",
     tag: "#ThinkBeforeYouTag",
