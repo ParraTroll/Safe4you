@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/advice")({
   head: () => ({
     meta: [
-      { title: "Ask the Cyber Guardian | Online Safety Advice Column | GuardUp" },
+      { title: "Ask the Cyber Guardian | Online Safety Advice Column | Safe4you" },
       {
         name: "description",
         content:
