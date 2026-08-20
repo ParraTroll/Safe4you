@@ -8,7 +8,7 @@ import teenNight from "@/assets/teen-night.jpg";
 export const Route = createFileRoute("/feature")({
   head: () => ({
     meta: [
-      { title: "Feature Article: Why Cyber Security Matters for Teens | GuardUp" },
+      { title: "Feature Article: Why Cyber Security Matters for Teens | Safe4you" },
       {
         name: "description",
         content:
