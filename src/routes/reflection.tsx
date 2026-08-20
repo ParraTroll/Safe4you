@@ -6,13 +6,13 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/reflection")({
   head: () => ({
     meta: [
-      { title: "Personal Reflection on Digital Wellbeing | GuardUp" },
+      { title: "Personal Reflection on Digital Wellbeing | Safe4you" },
       {
         name: "description",
         content:
           "Personal reflections on what we learned about online safety, the digital habit we want to change, and how it will benefit our health and wellbeing.",
       },
-      { property: "og:title", content: "Personal Reflection | GuardUp" },
+      { property: "og:title", content: "Personal Reflection | Safe4you" },
       {
         property: "og:description",
         content: "What we learned, what we'll change, and why it matters for wellbeing.",
