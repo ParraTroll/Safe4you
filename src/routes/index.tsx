@@ -65,7 +65,7 @@ function Home() {
               className="animate-rise text-5xl font-extrabold text-balance sm:text-6xl"
               style={{ animationDelay: "80ms" }}
             >
-              Safe<span className="text-gradient">4you</span>: Your Shield for a Safer Online Life
+              Safe<span className="text-gradient">4you</span> - Online Safety
             </h1>
             <p
               className="animate-rise mt-5 max-w-xl text-lg text-pretty text-muted-foreground"
