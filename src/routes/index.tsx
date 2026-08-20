@@ -61,11 +61,8 @@ function Home() {
       <section className="relative overflow-hidden">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pt-16 pb-20 lg:grid-cols-2 lg:pt-24">
           <div>
-            <span className="animate-rise animate-pulse-ring inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-1.5 text-xs font-semibold tracking-widest text-primary uppercase">
-              Digital Wellbeing · Online Safety &amp; Security
-            </span>
             <h1
-              className="animate-rise mt-6 text-5xl font-extrabold text-balance sm:text-6xl"
+              className="animate-rise text-5xl font-extrabold text-balance sm:text-6xl"
               style={{ animationDelay: "80ms" }}
             >
               Safe<span className="text-gradient">4you</span>: Your Shield for a Safer Online Life
