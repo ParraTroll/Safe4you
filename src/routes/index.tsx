@@ -205,8 +205,8 @@ function Home() {
                   <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
                 </div>
 
-                <div className="absolute -right-6 -bottom-6 z-30 w-80 origin-top-left scale-0 rounded-2xl border border-primary/30 bg-background p-5 opacity-0 shadow-2xl transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 sm:w-96">
-                  <div className="absolute -left-2 top-4 h-4 w-4 rotate-45 border-b border-l border-primary/30 bg-background" />
+                <div className="absolute left-full top-0 z-30 ml-4 w-80 origin-left scale-90 rounded-2xl border border-primary/30 bg-background p-5 opacity-0 shadow-2xl transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 sm:w-96">
+                  <div className="absolute -left-2 top-6 h-4 w-4 rotate-45 border-b border-l border-primary/30 bg-background" />
                   <div className="flex flex-col gap-4">
                     <img
                       src={p.image.url}
