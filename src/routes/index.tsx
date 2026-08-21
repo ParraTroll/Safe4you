@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Fingerprint, KeyRound, Lock, ShieldAlert, Wifi } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
@@ -70,6 +71,52 @@ const GALLERY = [
   { src: gallery5.url, alt: "Hand holding a smartphone showing the home screen" },
 ];
 
+function GallerySlideshow() {
+  const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (paused) return;
+    const id = setInterval(() => setIndex((i) => (i + 1) % GALLERY.length), 4000);
+    return () => clearInterval(id);
+  }, [paused]);
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div className="relative aspect-[16/10] overflow-hidden rounded-2xl glass">
+        {GALLERY.map((g, i) => (
+          <img
+            key={g.src}
+            src={g.src}
+            alt={g.alt}
+            loading={i === 0 ? "eager" : "lazy"}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+              i === index ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+      </div>
+      <div className="mt-4 flex justify-center gap-2">
+        {GALLERY.map((g, i) => (
+          <button
+            key={g.src}
+            type="button"
+            aria-label={`Show image ${i + 1}`}
+            onClick={() => setIndex(i)}
+            className={`h-2 rounded-full transition-all ${
+              i === index ? "w-6 bg-primary" : "w-2 bg-border hover:bg-primary/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Home() {
   return (
     <Layout>
@@ -114,22 +161,9 @@ function Home() {
           </div>
 
           <Reveal className="relative">
-            <div className="grid grid-cols-2 gap-3">
-              {GALLERY.map((g, i) => (
-                <div
-                  key={g.src}
-                  className={`overflow-hidden rounded-2xl glass transition-transform duration-500 hover:scale-[1.03] ${i === 0 ? "col-span-2" : ""}`}
-                >
-                  <img
-                    src={g.src}
-                    alt={g.alt}
-                    loading={i === 0 ? "eager" : "lazy"}
-                    className="h-full w-full object-cover aspect-[16/9]"
-                  />
-                </div>
-              ))}
-            </div>
+            <GallerySlideshow />
           </Reveal>
+
         </div>
       </section>
 
