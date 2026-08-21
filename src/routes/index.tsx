@@ -65,14 +65,13 @@ function Home() {
               className="animate-rise text-5xl font-extrabold text-balance sm:text-6xl"
               style={{ animationDelay: "80ms" }}
             >
-              Safe<span className="text-gradient">4Cyber</span> - #CyberSafe
+              Safe<span className="text-gradient">4Cyber</span> - Online Safety & Securtiy
             </h1>
             <p
               className="animate-rise mt-5 max-w-xl text-lg text-pretty text-muted-foreground"
               style={{ animationDelay: "160ms" }}
             >
-              A practical guide to online safety and cyber security for young people, how to lock
-              down your accounts, and spot scams before they hook you. Be cyber safe.
+              A guide on staying safe online. Lock down accounts, protect personal info, media literacy, avoid misinformation and be cyber-smart!
             </p>
 
             <div
@@ -95,7 +94,7 @@ function Home() {
             </div>
 
             <p className="mt-8 text-sm text-muted-foreground">
-              <span className="font-semibold text-foreground">Created by:</span> {TEAM.join(" · ")}
+              <span className="font-semibold text-foreground">Website by:</span> {TEAM.join(" · ")}
             </p>
           </div>
 
@@ -116,27 +115,19 @@ function Home() {
       <section className="mx-auto max-w-6xl px-5">
         <Reveal>
           <div className="rounded-3xl glass p-8 sm:p-10">
-            <h2 className="text-3xl font-bold">Why online safety matters</h2>
+            <h2 className="text-3xl font-bold">Why is Online Safety & Security important?</h2>
             <p className="mt-4 text-pretty text-muted-foreground">
-              Almost everything we do — school work, friendships, music, games, money — now runs
-              through a screen. That convenience comes with real risk: scam messages, hacked
-              accounts, data leaks and strangers who are not who they claim to be. Being targeted
-              online is not just a technical problem; losing an account, having private photos
-              shared or being scammed causes genuine stress, embarrassment and anxiety.
+              
             </p>
             <p className="mt-4 text-pretty text-muted-foreground">
-              The good news is that cyber security is a skill, not a talent. A few habits — unique
-              passwords, two-factor authentication, tight privacy settings and a healthy pause
-              before clicking — block the overwhelming majority of attacks that target teenagers.
-              This site walks you through those habits, with real facts, real advice and
-              interactive tools to practise on.
+              In today's day and age, malicious parties, with a single click can acsess thousands of peoples personal information; login info; search history and habits along with multitudes of other information that you wouldn't want someone having. Out of those thousands, you could be one. It might be quite scary knowing that someone could have your personal information, but luckily there are ways to prevent for malicious people getting things you dont want them to. Thats called being cyber-smart, our website provides a thourough explaination and guide into how to become cyber-smart and protect your information.
             </p>
           </div>
         </Reveal>
       </section>
 
       <section className="mx-auto max-w-6xl px-5 pt-16">
-        <h2 className="text-center text-3xl font-bold">Five pillars of staying secure</h2>
+        <h2 className="text-center text-3xl font-bold">How to stay secure.</h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
@@ -154,9 +145,9 @@ function Home() {
               to="/advice"
               className="flex h-full flex-col justify-between rounded-2xl border border-dashed border-primary/50 bg-primary/5 p-6 transition-colors hover:bg-primary/10"
             >
-              <h3 className="text-xl font-semibold">Got a question?</h3>
+              <h3 className="text-xl font-semibold">Questions?</h3>
               <span className="mt-4 inline-flex items-center gap-2 font-semibold text-primary">
-                Ask the Cyber Guardian <ArrowRight className="size-4" />
+                Visit our Q&A page <ArrowRight className="size-4" />
               </span>
             </Link>
           </Reveal>
