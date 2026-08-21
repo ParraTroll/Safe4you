@@ -35,26 +35,36 @@ const PILLARS = [
     icon: KeyRound,
     title: "Strong Passwords",
     text: "Long passphrases plus two-factor authentication stop almost every basic account takeover.",
+    image: staySafeKeyboard,
+    detail: "Use 12+ character passphrases, a password manager, and turn on 2FA everywhere you can.",
   },
   {
     icon: ShieldAlert,
     title: "Scam Spotting",
     text: "Urgency, prizes and weird links are the three biggest giveaways of a phishing message.",
+    image: gallery2,
+    detail: "If a message rushes you, promises free money, or hides the sender, stop and verify first.",
   },
   {
     icon: Lock,
     title: "Privacy Settings",
     text: "Locking down who can see your posts, location and friend list shrinks your risk fast.",
+    image: gallery4,
+    detail: "Set accounts to private, limit location sharing, and review friend lists regularly.",
   },
   {
     icon: Wifi,
     title: "Safe Networks",
     text: "Free public Wi-Fi is convenient — but never bank, shop or log in to anything important on it.",
+    image: gallery5,
+    detail: "Use mobile data or a VPN for sensitive tasks. Avoid unknown hotspots.",
   },
   {
     icon: Fingerprint,
     title: "Your Digital Identity",
     text: "Once personal details are out there, they are almost impossible to take back.",
+    image: gallery3,
+    detail: "Think before you post. Personal details can be used to impersonate or target you.",
   },
 ];
 
@@ -186,12 +196,27 @@ function Home() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
-              <article className="group h-full rounded-2xl glass p-6 transition-transform duration-300 hover:-translate-y-1.5">
-                <span className="grid size-12 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
-                  <p.icon className="size-6" />
-                </span>
-                <h3 className="mt-4 text-xl font-semibold">{p.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
+              <article className="group relative h-full overflow-hidden rounded-2xl glass transition-transform duration-300 hover:-translate-y-1.5">
+                <div className="p-6">
+                  <span className="grid size-12 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
+                    <p.icon className="size-6" />
+                  </span>
+                  <h3 className="mt-4 text-xl font-semibold">{p.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
+                </div>
+
+                <div className="absolute inset-x-0 bottom-0 translate-y-full bg-[image:var(--gradient-brand)] p-4 transition-transform duration-300 ease-out group-hover:translate-y-0">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={p.image.url}
+                      alt={p.title}
+                      className="size-14 shrink-0 rounded-lg object-cover"
+                    />
+                    <p className="text-xs font-medium leading-snug text-primary-foreground">
+                      {p.detail}
+                    </p>
+                  </div>
+                </div>
               </article>
             </Reveal>
           ))}
