@@ -111,8 +111,8 @@
   background: color-mix(in oklab, oklch(0.24 0.04 235) 55%, transparent);
   backdrop-filter: blur(14px);
   border: 1px solid var(--color-border);
-  box-shadow: var(--shadow-glow);
 }
+
 
 @utility text-gradient {
   color: var(--primary);
