@@ -141,7 +141,7 @@ function Home() {
               
             </p>
             <p className="mt-4 text-pretty text-muted-foreground">
-              In today's day and age, malicious parties, with a single click can acsess thousands of peoples personal information; login info; search history and habits along with multitudes of other information that you wouldn't want someone having. Out of those thousands, you could be one. It might be quite scary knowing that someone could have your personal information, but luckily there are ways to prevent for malicious people getting things you dont want them to. Thats called being cyber-smart, our website provides a thourough explaination and guide into how to become cyber-smart and protect your information.
+              In today's day and age, malicious parties, with a single click can acsess thousands of peoples personal information, login info, credit card information, phone number, passwords, search history and habits along with multitudes of other information that you wouldn't want someone having. Out of those thousands, you could be one. It might be quite scary knowing that someone could have your personal information, but luckily there are ways to prevent for malicious people getting things you dont want them to. Thats called being cyber-smart, our website provides a thourough explaination and guide into how to become cyber-smart and protect your information.
             </p>
           </div>
         </Reveal>
