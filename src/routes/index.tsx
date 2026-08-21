@@ -65,15 +65,14 @@ function Home() {
               className="animate-rise text-5xl font-extrabold text-balance sm:text-6xl"
               style={{ animationDelay: "80ms" }}
             >
-              Safe<span className="text-gradient">4you</span> - Online Safety
+              Safe<span className="text-gradient">4Cyber</span> - #CyberSafe
             </h1>
             <p
               className="animate-rise mt-5 max-w-xl text-lg text-pretty text-muted-foreground"
               style={{ animationDelay: "160ms" }}
             >
-              A practical guide to online safety and cyber security for young people — how to lock
-              down your accounts, spot scams before they hook you, and stay in control of your
-              digital life.
+              A practical guide to online safety and cyber security for young people, how to lock
+              down your accounts, and spot scams before they hook you. Be cyber safe.
             </p>
 
             <div
