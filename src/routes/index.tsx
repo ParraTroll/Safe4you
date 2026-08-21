@@ -3,6 +3,10 @@ import { ArrowRight, Fingerprint, KeyRound, Lock, ShieldAlert, Wifi } from "luci
 import { Layout } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
 import staySafeKeyboard from "@/assets/stay-safe-keyboard.png.asset.json";
+import gallery2 from "@/assets/gallery-2.png.asset.json";
+import gallery3 from "@/assets/gallery-3.png.asset.json";
+import gallery4 from "@/assets/gallery-4.png.asset.json";
+import gallery5 from "@/assets/gallery-5.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -54,6 +58,17 @@ const PILLARS = [
 ];
 
 const TEAM = ["Ibrahim Mollah", "Abdullah Ibn Usman", "Zaid Munir"];
+
+const GALLERY = [
+  {
+    src: staySafeKeyboard.url,
+    alt: "Brass key resting on a laptop keyboard above a green STAY SAFE key",
+  },
+  { src: gallery2.url, alt: "Stack of Visa, Mastercard and American Express credit cards" },
+  { src: gallery3.url, alt: "Illustration explaining identity theft" },
+  { src: gallery4.url, alt: "Collage of popular social media app logos" },
+  { src: gallery5.url, alt: "Hand holding a smartphone showing the home screen" },
+];
 
 function Home() {
   return (
