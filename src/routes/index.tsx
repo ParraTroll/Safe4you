@@ -35,26 +35,36 @@ const PILLARS = [
     icon: KeyRound,
     title: "Strong Passwords",
     text: "Long passphrases plus two-factor authentication stop almost every basic account takeover.",
+    image: staySafeKeyboard,
+    detail: "Use 12+ character passphrases, a password manager, and turn on 2FA everywhere you can.",
   },
   {
     icon: ShieldAlert,
     title: "Scam Spotting",
     text: "Urgency, prizes and weird links are the three biggest giveaways of a phishing message.",
+    image: gallery2,
+    detail: "If a message rushes you, promises free money, or hides the sender, stop and verify first.",
   },
   {
     icon: Lock,
     title: "Privacy Settings",
     text: "Locking down who can see your posts, location and friend list shrinks your risk fast.",
+    image: gallery4,
+    detail: "Set accounts to private, limit location sharing, and review friend lists regularly.",
   },
   {
     icon: Wifi,
     title: "Safe Networks",
     text: "Free public Wi-Fi is convenient — but never bank, shop or log in to anything important on it.",
+    image: gallery5,
+    detail: "Use mobile data or a VPN for sensitive tasks. Avoid unknown hotspots.",
   },
   {
     icon: Fingerprint,
     title: "Your Digital Identity",
     text: "Once personal details are out there, they are almost impossible to take back.",
+    image: gallery3,
+    detail: "Think before you post. Personal details can be used to impersonate or target you.",
   },
 ];
 
