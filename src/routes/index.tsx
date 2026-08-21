@@ -114,22 +114,9 @@ function Home() {
           </div>
 
           <Reveal className="relative">
-            <div className="grid grid-cols-2 gap-3">
-              {GALLERY.map((g, i) => (
-                <div
-                  key={g.src}
-                  className={`overflow-hidden rounded-2xl glass transition-transform duration-500 hover:scale-[1.03] ${i === 0 ? "col-span-2" : ""}`}
-                >
-                  <img
-                    src={g.src}
-                    alt={g.alt}
-                    loading={i === 0 ? "eager" : "lazy"}
-                    className="h-full w-full object-cover aspect-[16/9]"
-                  />
-                </div>
-              ))}
-            </div>
+            <GallerySlideshow />
           </Reveal>
+
         </div>
       </section>
 
