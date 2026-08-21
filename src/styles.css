@@ -76,7 +76,7 @@
       transparent 65%
     ),
     linear-gradient(160deg, oklch(0.12 0.03 250), oklch(0.1 0.03 255) 55%, oklch(0.08 0.02 260));
-  --gradient-brand: linear-gradient(100deg, var(--cyan), oklch(0.7 0.18 220) 45%, oklch(0.65 0.2 265));
+  --gradient-brand: linear-gradient(0deg, var(--primary), var(--primary));
   --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--cyan) 22%, transparent),
     0 24px 60px -24px color-mix(in oklab, var(--primary) 45%, transparent);
 }
@@ -115,10 +115,7 @@
 }
 
 @utility text-gradient {
-  background: var(--gradient-brand);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--primary);
 }
 
 @utility dot-pattern {
