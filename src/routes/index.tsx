@@ -196,12 +196,27 @@ function Home() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
-              <article className="group h-full rounded-2xl glass p-6 transition-transform duration-300 hover:-translate-y-1.5">
-                <span className="grid size-12 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
-                  <p.icon className="size-6" />
-                </span>
-                <h3 className="mt-4 text-xl font-semibold">{p.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
+              <article className="group relative h-full overflow-hidden rounded-2xl glass transition-transform duration-300 hover:-translate-y-1.5">
+                <div className="p-6">
+                  <span className="grid size-12 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
+                    <p.icon className="size-6" />
+                  </span>
+                  <h3 className="mt-4 text-xl font-semibold">{p.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
+                </div>
+
+                <div className="absolute inset-x-0 bottom-0 translate-y-full bg-[image:var(--gradient-brand)] p-4 transition-transform duration-300 ease-out group-hover:translate-y-0">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src={p.image.url}
+                      alt={p.title}
+                      className="size-14 shrink-0 rounded-lg object-cover"
+                    />
+                    <p className="text-xs font-medium leading-snug text-primary-foreground">
+                      {p.detail}
+                    </p>
+                  </div>
+                </div>
               </article>
             </Reveal>
           ))}
