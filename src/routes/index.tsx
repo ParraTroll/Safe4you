@@ -205,16 +205,20 @@ function Home() {
                   <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
                 </div>
 
-                <div className="absolute left-full top-1/2 z-20 ml-3 w-72 -translate-y-1/2 scale-90 rounded-2xl bg-[image:var(--gradient-brand)] p-5 opacity-0 shadow-xl transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 sm:w-80">
-                  <div className="flex flex-col gap-3">
+                <div className="absolute -right-6 -bottom-6 z-30 w-80 origin-top-left scale-0 rounded-2xl border border-primary/30 bg-background p-5 opacity-0 shadow-2xl transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 sm:w-96">
+                  <div className="absolute -left-2 top-4 h-4 w-4 rotate-45 border-b border-l border-primary/30 bg-background" />
+                  <div className="flex flex-col gap-4">
                     <img
                       src={p.image.url}
                       alt={p.title}
-                      className="h-28 w-full shrink-0 rounded-xl object-cover"
+                      className="h-36 w-full rounded-xl object-cover"
                     />
-                    <p className="text-sm font-medium leading-relaxed text-primary-foreground">
-                      {p.detail}
-                    </p>
+                    <div>
+                      <h4 className="text-lg font-semibold text-foreground">{p.title}</h4>
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                        {p.detail}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </article>
