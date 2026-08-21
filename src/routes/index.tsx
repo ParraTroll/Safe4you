@@ -196,7 +196,7 @@ function Home() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
-              <article className="group relative h-full rounded-2xl glass transition-transform duration-300 hover:-translate-y-1.5">
+              <article className="group relative z-0 h-full rounded-2xl glass transition-transform duration-300 hover:z-20 hover:-translate-y-1.5">
                 <div className="p-6">
                   <span className="grid size-12 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
                     <p.icon className="size-6" />
