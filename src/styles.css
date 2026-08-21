@@ -118,13 +118,6 @@
   color: var(--primary);
 }
 
-@utility dot-pattern {
-  background-image: radial-gradient(
-    color-mix(in oklab, var(--cyan) 22%, transparent) 1.2px,
-    transparent 1.2px
-  );
-  background-size: 28px 28px;
-}
 
 @keyframes float-slow {
   0%,
