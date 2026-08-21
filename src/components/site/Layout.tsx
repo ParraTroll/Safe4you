@@ -34,34 +34,12 @@ function ScrollBar() {
   );
 }
 
-function Cursor() {
-  const [pos, setPos] = useState({ x: -400, y: -400 });
-  useEffect(() => {
-    const onMove = (e: MouseEvent) => setPos({ x: e.clientX, y: e.clientY });
-    window.addEventListener("pointermove", onMove);
-    return () => window.removeEventListener("pointermove", onMove);
-  }, []);
-  return (
-    <div
-      aria-hidden
-      className="pointer-events-none fixed z-0 hidden h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40 blur-3xl md:block"
-      style={{
-        left: pos.x,
-        top: pos.y,
-        background:
-          "radial-gradient(circle, color-mix(in oklab, var(--primary) 35%, transparent), transparent 65%)",
-      }}
-    />
-  );
-}
-
 export function Layout({ children }: { children: ReactNode }) {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="relative min-h-screen">
       <ScrollBar />
-      <Cursor />
       <div aria-hidden className="pointer-events-none fixed inset-0 z-0 dot-pattern opacity-40" />
 
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/40 backdrop-blur-xl">
