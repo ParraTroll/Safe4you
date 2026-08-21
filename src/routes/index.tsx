@@ -196,7 +196,7 @@ function Home() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
-              <article className="group relative h-full overflow-hidden rounded-2xl glass transition-transform duration-300 hover:-translate-y-1.5">
+              <article className="group relative h-full rounded-2xl glass transition-transform duration-300 hover:-translate-y-1.5">
                 <div className="p-6">
                   <span className="grid size-12 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
                     <p.icon className="size-6" />
@@ -205,14 +205,14 @@ function Home() {
                   <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
                 </div>
 
-                <div className="absolute inset-x-0 bottom-0 translate-y-full bg-[image:var(--gradient-brand)] p-4 transition-transform duration-300 ease-out group-hover:translate-y-0">
-                  <div className="flex items-center gap-3">
+                <div className="absolute left-full top-1/2 z-20 ml-3 w-72 -translate-y-1/2 scale-90 rounded-2xl bg-[image:var(--gradient-brand)] p-5 opacity-0 shadow-xl transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 sm:w-80">
+                  <div className="flex flex-col gap-3">
                     <img
                       src={p.image.url}
                       alt={p.title}
-                      className="size-14 shrink-0 rounded-lg object-cover"
+                      className="h-28 w-full shrink-0 rounded-xl object-cover"
                     />
-                    <p className="text-xs font-medium leading-snug text-primary-foreground">
+                    <p className="text-sm font-medium leading-relaxed text-primary-foreground">
                       {p.detail}
                     </p>
                   </div>
