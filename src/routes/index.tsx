@@ -3,6 +3,10 @@ import { ArrowRight, Fingerprint, KeyRound, Lock, ShieldAlert, Wifi } from "luci
 import { Layout } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
 import staySafeKeyboard from "@/assets/stay-safe-keyboard.png.asset.json";
+import gallery2 from "@/assets/gallery-2.png.asset.json";
+import gallery3 from "@/assets/gallery-3.png.asset.json";
+import gallery4 from "@/assets/gallery-4.png.asset.json";
+import gallery5 from "@/assets/gallery-5.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,6 +59,17 @@ const PILLARS = [
 
 const TEAM = ["Ibrahim Mollah", "Abdullah Ibn Usman", "Zaid Munir"];
 
+const GALLERY = [
+  {
+    src: staySafeKeyboard.url,
+    alt: "Brass key resting on a laptop keyboard above a green STAY SAFE key",
+  },
+  { src: gallery2.url, alt: "Stack of Visa, Mastercard and American Express credit cards" },
+  { src: gallery3.url, alt: "Illustration explaining identity theft" },
+  { src: gallery4.url, alt: "Collage of popular social media app logos" },
+  { src: gallery5.url, alt: "Hand holding a smartphone showing the home screen" },
+];
+
 function Home() {
   return (
     <Layout>
@@ -99,14 +114,20 @@ function Home() {
           </div>
 
           <Reveal className="relative">
-            <div className="overflow-hidden rounded-3xl glass transition-transform duration-500 hover:animate-float hover:scale-[1.02]">
-              <img
-                src={staySafeKeyboard.url}
-                alt="Brass key resting on a laptop keyboard above a green STAY SAFE key"
-                width={1920}
-                height={1280}
-                className="h-full w-full object-cover"
-              />
+            <div className="grid grid-cols-2 gap-3">
+              {GALLERY.map((g, i) => (
+                <div
+                  key={g.src}
+                  className={`overflow-hidden rounded-2xl glass transition-transform duration-500 hover:scale-[1.03] ${i === 0 ? "col-span-2" : ""}`}
+                >
+                  <img
+                    src={g.src}
+                    alt={g.alt}
+                    loading={i === 0 ? "eager" : "lazy"}
+                    className="h-full w-full object-cover aspect-[16/9]"
+                  />
+                </div>
+              ))}
             </div>
           </Reveal>
         </div>
