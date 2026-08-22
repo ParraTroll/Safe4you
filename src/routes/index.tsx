@@ -196,30 +196,13 @@ function Home() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {PILLARS.map((p, i) => (
             <Reveal key={p.title} delay={i * 80}>
-              <article className="group relative z-0 h-full rounded-2xl glass transition-transform duration-300 hover:z-20 hover:-translate-y-1.5">
+              <article className="group h-full rounded-2xl glass transition-transform duration-300 hover:-translate-y-1.5">
                 <div className="p-6">
                   <span className="grid size-12 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
                     <p.icon className="size-6" />
                   </span>
                   <h3 className="mt-4 text-xl font-semibold">{p.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
-                </div>
-
-                <div className="absolute left-full top-0 z-30 ml-4 w-80 origin-left scale-90 rounded-2xl border border-primary/30 bg-background p-5 opacity-0 shadow-2xl transition-all duration-300 ease-out group-hover:scale-100 group-hover:opacity-100 sm:w-96">
-                  <div className="absolute -left-2 top-6 h-4 w-4 rotate-45 border-b border-l border-primary/30 bg-background" />
-                  <div className="flex flex-col gap-4">
-                    <img
-                      src={p.image.url}
-                      alt={p.title}
-                      className="h-36 w-full rounded-xl object-cover"
-                    />
-                    <div>
-                      <h4 className="text-lg font-semibold text-foreground">{p.title}</h4>
-                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                        {p.detail}
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </article>
             </Reveal>
