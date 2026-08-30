@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Layout, PageHeader } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
 import phishing from "@/assets/personal-data-phishing.png.asset.json";
-import teenNight from "@/assets/teen-night.jpg";
+import nightPhone from "@/assets/night-phone.png.asset.json";
 
 export const Route = createFileRoute("/feature")({
   head: () => ({
@@ -153,8 +153,8 @@ function Feature() {
         <Reveal>
           <figure className="mt-12 overflow-hidden rounded-3xl glass">
             <img
-              src={teenNight}
-              alt="A teenager looking worried at their phone late at night"
+              src={nightPhone.url}
+              alt="An adult scrolling on a phone in bed late at night"
               width={1200}
               height={800}
               loading="lazy"
