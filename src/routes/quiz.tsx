@@ -46,7 +46,7 @@ const QUESTIONS = [
   {
     q: "A friend DMs asking you to send them a verification code that just arrived on your phone.",
     options: [
-      "Send it — they're your friend",
+      "Send it, they're your friend",
       "Never send it; their account is likely hacked",
       "Send half the code to be safe",
     ],
