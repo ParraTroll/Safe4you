@@ -60,16 +60,16 @@ const POSTS = [
 const COMIC = [
   {
     label: "Panel 1",
-    text: "10:47pm. Maya's phone buzzes: 'AusPost: your parcel is held. Pay $2.50 to release it.'",
+    text: "Sarah is on her bed when she receives a message from one of her 'friends' about a free superhero movie.",
   },
-  { label: "Panel 2", text: "She taps the link. The page looks perfect. Card number… ready to type." },
+  { label: "Panel 2", text: "She goes to click it, then remembers her teacher's warning about suspicious links" },
   {
     label: "Panel 3",
-    text: "She stops. She never ordered anything. The web address reads 'auspost-track.co'.",
+    text: "She stops. Sarah goes and tells her mother about her concern.",
   },
   {
     label: "Panel 4",
-    text: "Maya deletes it, reports it to Scamwatch, and warns the group chat. Two friends had the same text.",
+    text: "Her mother tells her that she was sent a phishing link; she tells her that they should use legitimate sites instead",
   },
 ];
 
