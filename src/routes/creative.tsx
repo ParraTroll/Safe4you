@@ -34,7 +34,7 @@ const POSTS = [
       "That 'free V-Bucks' link your mate sent? Their account is hacked, not generous. Never log in through a link someone DMs you. 🎣",
     tag: "#PhishingIsNotFishing",
     likes: 1284,
-    art: "linear-gradient(135deg, oklch(0.32 0.14 160), oklch(0.24 0.1 240))",
+    art: "linear-gradient(135deg, oklch(0.32 0.14 55), oklch(0.24 0.1 45))",
     emoji: "🎣",
   },
   {
@@ -43,7 +43,7 @@ const POSTS = [
       "Your password should be a passphrase: 4 random words beats P@ssw0rd1 every single time. Then switch on 2FA and go live your life. 🔐",
     tag: "#PassphraseNotPassword",
     likes: 967,
-    art: "linear-gradient(135deg, oklch(0.3 0.12 205), oklch(0.22 0.1 265))",
+    art: "linear-gradient(135deg, oklch(0.3 0.12 60), oklch(0.22 0.1 50))",
     emoji: "🔐",
   },
   {
@@ -52,7 +52,7 @@ const POSTS = [
       "Uniform + suburb + daily routine = a map to you. Post the memory, not the location. 📍",
     tag: "#ThinkBeforeYouTag",
     likes: 1533,
-    art: "linear-gradient(135deg, oklch(0.34 0.15 145), oklch(0.2 0.08 250))",
+    art: "linear-gradient(135deg, oklch(0.34 0.15 45), oklch(0.2 0.08 55))",
     emoji: "📍",
   },
 ];

@@ -38,27 +38,27 @@
 
 :root {
   --radius: 0.875rem;
-  --background: oklch(0.16 0.03 240);
-  --foreground: oklch(0.97 0.01 200);
-  --card: oklch(0.22 0.035 235 / 60%);
-  --card-foreground: oklch(0.97 0.01 200);
-  --popover: oklch(0.2 0.035 235);
-  --popover-foreground: oklch(0.97 0.01 200);
-  --primary: oklch(0.72 0.18 205);
-  --primary-foreground: oklch(0.12 0.04 240);
-  --secondary: oklch(0.28 0.05 235);
-  --secondary-foreground: oklch(0.97 0.01 200);
-  --muted: oklch(0.26 0.04 238);
-  --muted-foreground: oklch(0.75 0.03 220);
-  --accent: oklch(0.72 0.18 230);
-  --accent-foreground: oklch(0.15 0.04 240);
+  --background: oklch(0.16 0.03 45);
+  --foreground: oklch(0.97 0.01 60);
+  --card: oklch(0.22 0.035 50 / 60%);
+  --card-foreground: oklch(0.97 0.01 60);
+  --popover: oklch(0.2 0.035 50);
+  --popover-foreground: oklch(0.97 0.01 60);
+  --primary: oklch(0.72 0.18 55);
+  --primary-foreground: oklch(0.12 0.04 45);
+  --secondary: oklch(0.28 0.05 50);
+  --secondary-foreground: oklch(0.97 0.01 60);
+  --muted: oklch(0.26 0.04 55);
+  --muted-foreground: oklch(0.78 0.03 60);
+  --accent: oklch(0.76 0.16 45);
+  --accent-foreground: oklch(0.15 0.04 45);
   --destructive: oklch(0.63 0.23 20);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.85 0.12 200 / 18%);
-  --input: oklch(0.85 0.12 200 / 22%);
-  --ring: oklch(0.72 0.18 205);
-  --cyan: oklch(0.78 0.16 205);
-  --lime: oklch(0.72 0.18 235);
+  --border: oklch(0.85 0.12 55 / 18%);
+  --input: oklch(0.85 0.12 55 / 22%);
+  --ring: oklch(0.72 0.18 55);
+  --cyan: oklch(0.78 0.16 55);
+  --lime: oklch(0.75 0.16 45);
 
   --gradient-page: radial-gradient(
       1100px 700px at 12% -8%,
@@ -75,9 +75,9 @@
       color-mix(in oklab, var(--cyan) 18%, transparent),
       transparent 65%
     ),
-    linear-gradient(160deg, oklch(0.12 0.03 250), oklch(0.1 0.03 255) 55%, oklch(0.08 0.02 260));
+    linear-gradient(160deg, oklch(0.14 0.03 40), oklch(0.11 0.03 45) 55%, oklch(0.09 0.02 50));
   --gradient-brand: linear-gradient(0deg, var(--primary), var(--primary));
-  --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--cyan) 22%, transparent),
+  --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--accent) 22%, transparent),
     0 24px 60px -24px color-mix(in oklab, var(--primary) 45%, transparent);
 }
 
@@ -108,7 +108,7 @@
 }
 
 @utility glass {
-  background: color-mix(in oklab, oklch(0.24 0.04 235) 55%, transparent);
+  background: color-mix(in oklab, oklch(0.24 0.04 50) 55%, transparent);
   backdrop-filter: blur(14px);
   border: 1px solid var(--color-border);
 }
