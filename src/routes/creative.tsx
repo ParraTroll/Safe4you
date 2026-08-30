@@ -161,7 +161,7 @@ function Creative() {
       </section>
 
       <section className="mx-auto max-w-5xl px-5 pt-16">
-        <h2 className="text-center text-3xl font-bold">The Safe4you campaign feed</h2>
+        <h2 className="text-center text-3xl font-bold">The Safe4you example Instagram feed</h2>
         <p className="mt-3 text-center text-muted-foreground">
           Three posts we designed to make cyber safety actually shareable. Tap the hearts.
         </p>
