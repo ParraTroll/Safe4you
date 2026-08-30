@@ -111,7 +111,7 @@ function PasswordMeter() {
             key={i}
             className={cn(
               "h-2 flex-1 rounded-full transition-all duration-500",
-              i < score ? "bg-[image:var(--gradient-brand)]" : "bg-secondary",
+              i < score ? "bg-primary" : "bg-secondary",
             )}
           />
         ))}
@@ -149,7 +149,7 @@ function Quiz() {
           </div>
           <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-secondary">
             <div
-              className="h-full bg-[image:var(--gradient-brand)] transition-[width] duration-500"
+              className="h-full bg-primary transition-[width] duration-500"
               style={{ width: `${(answered / QUESTIONS.length) * 100}%` }}
             />
           </div>

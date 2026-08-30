@@ -152,7 +152,7 @@ function Home() {
             >
               <Link
                 to="/quiz"
-                className="group inline-flex items-center gap-2 rounded-full bg-[image:var(--gradient-brand)] px-6 py-3 font-semibold text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-[1.03]"
+                className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-[1.03]"
               >
                 Test your safety score
                 <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -198,7 +198,7 @@ function Home() {
             <Reveal key={p.title} delay={i * 80}>
               <article className="group h-full rounded-2xl glass transition-transform duration-300 hover:-translate-y-1.5">
                 <div className="p-6">
-                  <span className="grid size-12 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
+                  <span className="grid size-12 place-items-center rounded-xl bg-primary text-primary-foreground transition-transform duration-300 group-hover:rotate-6">
                     <p.icon className="size-6" />
                   </span>
                   <h3 className="mt-4 text-xl font-semibold">{p.title}</h3>

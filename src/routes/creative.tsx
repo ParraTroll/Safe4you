@@ -79,7 +79,7 @@ function Post({ post, index }: { post: (typeof POSTS)[number]; index: number }) 
     <Reveal delay={index * 100}>
       <article className="overflow-hidden rounded-3xl glass">
         <header className="flex items-center gap-3 p-4">
-          <span className="grid size-9 place-items-center rounded-full bg-[image:var(--gradient-brand)] text-sm font-bold text-primary-foreground">
+          <span className="grid size-9 place-items-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
             G
           </span>
           <span className="text-sm font-semibold">{post.handle}</span>
