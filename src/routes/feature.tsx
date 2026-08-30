@@ -116,13 +116,8 @@ function Feature() {
 
         <Reveal delay={80}>
           <p className="mt-8 text-lg leading-relaxed text-pretty">
-            Most people picture a cyber attack as someone in a hoodie cracking code. In reality, the
-            attacks that hit young people are far simpler and far more personal. A message arrives
-            saying your gaming account will be deleted unless you log in right now. A "friend"
-            messages from a hacked profile asking for a verification code. A free-skins website asks
-            you to sign in with your real account. Every one of these relies on the same trick:
-            creating urgency so you act before you think. Once an attacker holds one password, they
-            try it everywhere else — and because most people reuse passwords, it usually works.
+            Most people envision cyber attacks as some sophisticated scheme, with a group of hooded people Infront of giant supercomputer, cracking at code. In reality, the attacks that hit young people the most often, are far more simple and personal, phising attacks. It could be like a message that a young person gets, saying your gaming account will be deleted, if you don't log into this website. Or a "friend" who's account has been hacked sends you a message with a promise or free money or game items. Or a free in game currency website asks you for your login info. Every one of these relies on a simple trick, making you feel a sense of urgency, making you act on impulse, not on thought. Often when a hacker finds a password, they'll try it everywhere, seeing if it works, often people reuse the same passwords for multiple sites, which can be very dangerous, because it often works. 
+
           </p>
         </Reveal>
 
