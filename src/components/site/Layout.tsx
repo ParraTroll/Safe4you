@@ -1,7 +1,31 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
-import { Menu, ShieldCheck, X } from "lucide-react";
+import { Menu, Moon, ShieldCheck, Sun, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+function ThemeToggle() {
+  const [dark, setDark] = useState(false);
+  useEffect(() => {
+    setDark(document.documentElement.classList.contains("dark"));
+  }, []);
+  const toggle = () => {
+    const next = !dark;
+    setDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    try {
+      localStorage.setItem("theme", next ? "dark" : "light");
+    } catch {}
+  };
+  return (
+    <button
+      onClick={toggle}
+      aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
+      className="grid size-10 place-items-center rounded-xl border border-border text-foreground transition-colors hover:bg-secondary/60"
+    >
+      {dark ? <Sun className="size-5" /> : <Moon className="size-5" />}
+    </button>
+  );
+}
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -27,7 +51,7 @@ function ScrollBar() {
   return (
     <div className="fixed inset-x-0 top-0 z-50 h-0.5 bg-transparent">
       <div
-        className="h-full bg-[image:var(--gradient-brand)] transition-[width] duration-150"
+        className="h-full bg-primary transition-[width] duration-150"
         style={{ width: `${pct}%` }}
       />
     </div>
@@ -45,7 +69,7 @@ export function Layout({ children }: { children: ReactNode }) {
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/40 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
           <Link to="/" className="group flex items-center gap-2.5">
-            <span className="grid size-9 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground shadow-[var(--shadow-glow)]">
+            <span className="grid size-9 place-items-center rounded-xl bg-primary text-primary-foreground shadow-[var(--shadow-glow)]">
               <ShieldCheck className="size-5" />
             </span>
             <span className="font-display text-lg font-bold tracking-tight">
@@ -68,13 +92,16 @@ export function Layout({ children }: { children: ReactNode }) {
             ))}
           </ul>
 
-          <button
-            onClick={() => setOpen((v) => !v)}
-            aria-label="Toggle menu"
-            className="grid size-10 place-items-center rounded-xl border border-border text-foreground lg:hidden"
-          >
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
-          </button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={() => setOpen((v) => !v)}
+              aria-label="Toggle menu"
+              className="grid size-10 place-items-center rounded-xl border border-border text-foreground lg:hidden"
+            >
+              {open ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
+          </div>
         </nav>
 
         <div

@@ -56,7 +56,7 @@ function Reflection() {
           <Reveal key={e.q} delay={i * 100}>
             <article className="rounded-3xl glass p-7 sm:p-9">
               <div className="flex items-center gap-4">
-                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground">
+                <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
                   <e.icon className="size-5" />
                 </span>
                 <h2 className="text-xl font-bold text-balance">{e.q}</h2>

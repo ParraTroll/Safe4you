@@ -62,7 +62,7 @@ function Letter({ letter, index }: { letter: (typeof LETTERS)[number]; index: nu
     <Reveal delay={index * 100}>
       <article className="overflow-hidden rounded-3xl glass">
         <div className="flex items-start gap-4 p-6 sm:p-8">
-          <span className="mt-1 grid size-10 shrink-0 place-items-center rounded-xl bg-[image:var(--gradient-brand)] text-primary-foreground">
+          <span className="mt-1 grid size-10 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
             <Mail className="size-5" />
           </span>
           <div>
