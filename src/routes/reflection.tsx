@@ -27,18 +27,18 @@ export const Route = createFileRoute("/reflection")({
 const ENTRIES = [
   {
     icon: Lightbulb,
-    q: "What's one thing I've learned about digital wellbeing?",
-    a: "The biggest thing I learned is that cyber security is mostly about people, not computers. Before this unit I assumed getting hacked meant someone had broken through complicated code. Researching it showed me that the overwhelming majority of attacks on young people are social — a message designed to make you panic, a fake login page, a 'friend' asking for a code. That completely changed how I see my own risk: I do not need to be a tech expert to be safe, I need to be someone who pauses before reacting.",
+    q: "Personal Reflection: Ibrahim Mollah",
+    a: "Honestly, this project has taught me one big thing: that the internet can be one scary place, but there are ways of protecting yourself, like how we mentioned two-factor authentication, it crazy how just making a login two steps instead of one can improve account security leaps and bounds! If I’m going to take anything away from this project, it’s that I'm going to now have two-factor authentication on everything I own. I really think with this, past the fact that my account security will be upgraded, ill have more peace of mind, knowing that my accounts are all safe.",
   },
   {
     icon: Repeat,
-    q: "What's one digital habit I'd like to improve or change?",
-    a: "I want to stop reusing the same two passwords across almost every account. It felt harmless because remembering unique passwords seemed impossible, but I now understand that one leaked password effectively unlocks everything else I own. My plan is to move my important accounts — email, banking, socials and school — onto unique passphrases stored in a password manager, and to switch on two-factor authentication for each one. I also want to break the habit of opening links straight from notifications late at night.",
+    q: "Personal Reflection: Zaid Munir",
+    a: "This project has taught me definitely taught me about digital well-being; the biggest thing in my opinion, is maintaining your online presence. From making sure you aren’t posting personal identifying information carelessly, possibly exposing yourself to who knows who- predators, bullies and whatnot. If I’m going to learn anything, it’s most definitely that I will not be posting anything personal online. Of course, I’m going to still post, but I’ll monitor what I post, who can see and what it reveals. This mindset will surely improve my overall well-being and happiness, knowing I’m putting in the right precautions to ensure random strangers don’t know where I live or go to school.",
   },
   {
     icon: Sparkles,
-    q: "How could this change benefit my health and wellbeing?",
-    a: "Practically, it protects my accounts, my money and my private conversations. Emotionally, the benefit is bigger: a lot of stress online comes from the fear of losing control — being locked out, having something private shared, or being scammed and having to explain it. Knowing my accounts are properly secured takes that background worry away. It also means I can enjoy being online, keep up friendships and use technology for school without that low-level anxiety following me around.",
+    q: "Personal Reflection: Abdullah Ibn Osman ",
+    a: "This was an amazing project; I enjoyed it. If I’m going to learn anything from it, it 100% would be that you should really check what links you're pressing online, even if it’s from friends. Me especially, I sometimes do press on shady links; luckily nothing's happened yet. I'm smart enough not to put my personal information in, but from now on, if it’s really shady, I’m not even going to risk it. I’m 100% sure that by doing this, I won't have to worry ever again about my accounts getting hacked by pressing a shady link; this will definitely give me some peace of mind.",
   },
 ];
 
