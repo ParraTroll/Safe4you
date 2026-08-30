@@ -92,13 +92,16 @@ export function Layout({ children }: { children: ReactNode }) {
             ))}
           </ul>
 
-          <button
-            onClick={() => setOpen((v) => !v)}
-            aria-label="Toggle menu"
-            className="grid size-10 place-items-center rounded-xl border border-border text-foreground lg:hidden"
-          >
-            {open ? <X className="size-5" /> : <Menu className="size-5" />}
-          </button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={() => setOpen((v) => !v)}
+              aria-label="Toggle menu"
+              className="grid size-10 place-items-center rounded-xl border border-border text-foreground lg:hidden"
+            >
+              {open ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
+          </div>
         </nav>
 
         <div
