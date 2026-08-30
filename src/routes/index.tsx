@@ -34,14 +34,14 @@ const PILLARS = [
   {
     icon: KeyRound,
     title: "Strong Passwords",
-    text: "Long passphrases plus two-factor authentication stop almost every basic account takeover.",
+    text: "Long passphrases plus two-factor authentication stop almost every basic account hack attempt.",
     image: staySafeKeyboard,
     detail: "Use 12+ character passphrases, a password manager, and turn on 2FA everywhere you can.",
   },
   {
     icon: ShieldAlert,
     title: "Scam Spotting",
-    text: "Urgency, prizes and weird links are the three biggest giveaways of a phishing message.",
+    text: "Urgency, monetary or other rewards and weird links are the three biggest giveaways of a phishing message.",
     image: gallery2,
     detail: "If a message rushes you, promises free money, or hides the sender, stop and verify first.",
   },
@@ -55,7 +55,7 @@ const PILLARS = [
   {
     icon: Wifi,
     title: "Safe Networks",
-    text: "Free public Wi-Fi is convenient — but never bank, shop or log in to anything important on it.",
+    text: "Free public Wi-Fi is convenient, but never bank, shop or log in to anything important on it or don't use it at all.",
     image: gallery5,
     detail: "Use mobile data or a VPN for sensitive tasks. Avoid unknown hotspots.",
   },
