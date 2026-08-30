@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Layout, PageHeader } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
-import phishing from "@/assets/phishing.jpg";
+import phishing from "@/assets/personal-data-phishing.png.asset.json";
 import teenNight from "@/assets/teen-night.jpg";
 
 export const Route = createFileRoute("/feature")({
