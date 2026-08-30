@@ -1,7 +1,31 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
-import { Menu, ShieldCheck, X } from "lucide-react";
+import { Menu, Moon, ShieldCheck, Sun, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+function ThemeToggle() {
+  const [dark, setDark] = useState(false);
+  useEffect(() => {
+    setDark(document.documentElement.classList.contains("dark"));
+  }, []);
+  const toggle = () => {
+    const next = !dark;
+    setDark(next);
+    document.documentElement.classList.toggle("dark", next);
+    try {
+      localStorage.setItem("theme", next ? "dark" : "light");
+    } catch {}
+  };
+  return (
+    <button
+      onClick={toggle}
+      aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
+      className="grid size-10 place-items-center rounded-xl border border-border text-foreground transition-colors hover:bg-secondary/60"
+    >
+      {dark ? <Sun className="size-5" /> : <Moon className="size-5" />}
+    </button>
+  );
+}
 
 const NAV = [
   { to: "/", label: "Home" },
