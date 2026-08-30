@@ -123,13 +123,8 @@ function Feature() {
 
         <Reveal delay={120}>
           <p className="mt-6 text-lg leading-relaxed text-pretty">
-            The consequences are not just financial. Losing control of a social account can mean
-            private messages, photos and your friends list end up in a stranger's hands, and the
-            embarrassment and anxiety that follow can affect sleep, schoolwork and friendships. This
-            is why online safety is a wellbeing issue, not only a technology issue. Building three
-            habits — a unique passphrase for every important account, two-factor authentication
-            turned on, and a deliberate ten-second pause before clicking any link that pressures you
-            — removes the overwhelming majority of that risk.
+            The consequences are often not just limited to game items being lost, losing control of accounts can mean bad actors stealing money, viewing private messages, photos and seeing who's on your friends list, possibly making them their next victims. This loss can effect people mentally, causing a lack of sleep, anxiety and stress. There are 3 main habits which can aid you in ensuring that you don't fall prey to these attacks, having a unique password for each account, having two-factor authentication on (using a separate account to authenticate whether the person signing in is actually you) and actually thinking before you press on a link, who sent it to you, what it is and is it too good to be true? 
+
           </p>
         </Reveal>
 
