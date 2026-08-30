@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Layout, PageHeader } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
-import phishing from "@/assets/phishing.jpg";
+import phishing from "@/assets/personal-data-phishing.png.asset.json";
 import teenNight from "@/assets/teen-night.jpg";
 
 export const Route = createFileRoute("/feature")({
@@ -100,16 +100,16 @@ function Feature() {
         <Reveal>
           <figure className="overflow-hidden rounded-3xl glass">
             <img
-              src={phishing}
-              alt="A phishing email being pulled from a laptop screen by a fish hook"
+              src={phishing.url}
+              alt="A masked figure phishing for personal data across two laptops"
               width={1200}
               height={800}
               loading="lazy"
               className="w-full object-cover"
             />
             <figcaption className="px-5 py-3 text-sm text-muted-foreground">
-              Phishing works by imitating something you already trust — a delivery notice, a game
-              login, a message from a friend.
+              Phishing tricks people into handing over personal data by pretending to be someone or
+              something trustworthy.
             </figcaption>
           </figure>
         </Reveal>
