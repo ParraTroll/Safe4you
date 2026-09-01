@@ -4,7 +4,7 @@ import { Heart, MessageCircle, Send } from "lucide-react";
 import { Layout, PageHeader } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
 import { cn } from "@/lib/utils";
-import scenario from "@/public/Creative.jpg;
+const scenario = "/Creative.jpg";
 
 export const Route = createFileRoute("/creative")({
   head: () => ({
