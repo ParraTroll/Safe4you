@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Layout, PageHeader } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
-import phishing from "@/assets/personal-data-phishing.png.asset.json";
-import nightPhone from "@/assets/night-phone.png.asset.json";
+const phishing = "/personal-data-phishing.png";
+const nightPhone = "/night-phone.png";
 
 export const Route = createFileRoute("/feature")({
   head: () => ({
@@ -100,7 +100,7 @@ function Feature() {
         <Reveal>
           <figure className="overflow-hidden rounded-3xl glass">
             <img
-              src={phishing.url}
+              src={phishing}
               alt="A masked figure phishing for personal data across two laptops"
               width={1200}
               height={800}
@@ -143,7 +143,7 @@ function Feature() {
         <Reveal>
           <figure className="mt-12 overflow-hidden rounded-3xl glass">
             <img
-              src={nightPhone.url}
+              src={nightPhone}
               alt="An adult scrolling on a phone in bed late at night"
               width={1200}
               height={800}

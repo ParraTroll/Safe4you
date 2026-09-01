@@ -3,11 +3,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Fingerprint, KeyRound, Lock, ShieldAlert, Wifi } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { Reveal } from "@/components/site/Reveal";
-import staySafeKeyboard from "@/assets/stay-safe-keyboard.png.asset.json";
-import gallery2 from "@/assets/gallery-2.png.asset.json";
-import gallery3 from "@/assets/gallery-3.png.asset.json";
-import gallery4 from "@/assets/gallery-4.png.asset.json";
-import gallery5 from "@/assets/gallery-5.png.asset.json";
+const staySafeKeyboard = "/stay-safe-keyboard.png";
+const gallery2 = "/gallery-2.png";
+const gallery3 = "/gallery-3.png";
+const gallery4 = "/gallery-4.png";
+const gallery5 = "/gallery-5.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -72,13 +72,13 @@ const TEAM = ["Ibrahim Mollah", "Abdullah Ibn Usman", "Zaid Munir"];
 
 const GALLERY = [
   {
-    src: staySafeKeyboard.url,
+    src: staySafeKeyboard,
     alt: "Brass key resting on a laptop keyboard above a green STAY SAFE key",
   },
-  { src: gallery2.url, alt: "Stack of Visa, Mastercard and American Express credit cards" },
-  { src: gallery3.url, alt: "Illustration explaining identity theft" },
-  { src: gallery4.url, alt: "Collage of popular social media app logos" },
-  { src: gallery5.url, alt: "Hand holding a smartphone showing the home screen" },
+  { src: gallery2, alt: "Stack of Visa, Mastercard and American Express credit cards" },
+  { src: gallery3, alt: "Illustration explaining identity theft" },
+  { src: gallery4, alt: "Collage of popular social media app logos" },
+  { src: gallery5, alt: "Hand holding a smartphone showing the home screen" },
 ];
 
 function GallerySlideshow() {
