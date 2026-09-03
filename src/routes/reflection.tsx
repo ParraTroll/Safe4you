@@ -37,7 +37,7 @@ const ENTRIES = [
   },
   {
     icon: Sparkles,
-    q: "Personal Reflection: Abdullah Ibn Osman ",
+    q: "Personal Reflection: Abdullah Ibn Usman ",
     a: "This was an amazing project; I enjoyed it. If I’m going to learn anything from it, it 100% would be that you should really check what links you're pressing online, even if it’s from friends. Me especially, I sometimes do press on shady links; luckily nothing's happened yet. I'm smart enough not to put my personal information in, but from now on, if it’s really shady, I’m not even going to risk it. I’m 100% sure that by doing this, I won't have to worry ever again about my accounts getting hacked by pressing a shady link; this will definitely give me some peace of mind.",
   },
 ];
